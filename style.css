@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+}
+header {
+    max-width: 100%;
+    height: 40px;
+    background-color: #000000;
+    z-index: 1;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+.menu a{
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+    
+.menu a:hover{
+    font-size: 18px;
+    color: rgb(93, 223, 216);
+    transition: 0.5s linear;
+}
+.conteiner-principal{
+    min-width:100vw;
+    display: flex;
+    gap: 20px;
+    
+}
+.conteiner-filho{
+    width: 40%;
+    margin: 40px;
+    display:flex;
+    flex-direction: column;
+}
+
+.logo{
+    width: 500px;
+    display: flex;
+    margin-top: 100px;
+    
+}
+.caixa-texto{
+    max-width: 600px;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+.caixa-texto h1{
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+   
+
+}
+.caixa-texto button{
+    background-color:rgb(48, 121, 117) ;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: 1s linear ;
+}
+.caixa-texto button:hover{
+    
+    font-size: 15px;
+    background-color:rgb(67, 153, 149) ;
+    
+}
+.mascara-formulario{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    z-index: 1;
+    transition: 0.5s linear;
+}
+
+
+.formulario{
+    visibility:hidden;
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    padding: 30px;
+    margin: 30px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgba(27, 26, 26, 0.99) 0%, rgba(49, 53, 54, 0.7) 80%, rgba(36, 32, 32, 0.99) 100%);
+    transition: 0.5s linear;
+    z-index: 2;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+
+}
+
+.infor{
+   display: flex;
+   flex-direction: column;
+}
+.infor input{
+    border-radius: 5px;
+    display: flex;
+    
+}
+label{
+    color: #fff;
+
+}
+.enviar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.fundo{
+    position: fixed;
+    min-height: 100vh;
+    min-width: 100vw;
+    top: 0;
+    z-index: -2;
+    
+    
+}
+.fundo img{
+    max-width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+
+}
+.mascara{
+    min-width:100vw;
+    height: 100%;
+    background: linear-gradient(360deg, rgba(10, 12, 16, 0.99) 5%, rgba(28, 32, 41, 0.7) 80%, rgba(10, 12, 16, 0.99) 95%);
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    
+}
+.tabela-de-preço{
+    display: flex;
+    justify-content: space-around;
+    margin: 200px;
+    border: 2px solid #4d4b4b;
+    border-radius: 10px;
+    background-color: transparent ;
+    padding: 20px;
+
+
+}
+
+h3{
+    font-size: 25px;
+    color: #fff;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    text-decoration: overline;
+
+}
+.itens{
+    color: #fff;
+    margin-left: 50px;
+    font-size: 20px;
+    
+}
+.precos{
+    color: #fff;
+    font-size: 20px;
+    
+}
+.local{
+    margin:50px 0;
+    display: flex;
+    justify-content:space-around;
+    gap:20px;
+
+}
+.mapa{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: transparent 15px #4d4b4b;
+    backdrop-filter: blur(50px);
+    border: 1px solid #4d4b4b;
+    border-radius: 30px;
+    opacity: 0.5;
+}
+.mapa:hover{
+    opacity: 1;
+}
+.mapa iframe{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    
+    
+}
+
+.endereço{
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    color: #fff;
+    font-size: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    border:1px solid #4d4b4b;
+    border-radius: 30px;
+    opacity: 0.5;
+
+}
+.endereço:hover{
+    opacity: 1;
+    
+}
+footer{
+    min-width: 100vw;
+    height: 100px;
+    background-color: #eee1e18f;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    
+   
+}
+
+footer img:hover{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+ @media (max-width: 850px){
+    header{
+        margin:0 20px;
+        
+    }
+    .conteiner-filho{
+        width:100%;
+    }
+    .caixa-texto p{
+      display:none;
+    }
+    .logo{
+        
+        max-width: 300px;
+        margin:20px;
+    }
+    .formulario{
+    
+    max-width: 300px;
+    top: 10px;
+    margin: 0;
+   
+    }
+    
+    .tabela-de-preço{
+        margin: 0;
+        padding:0px;
+        
+    }
+    li{
+        font-size:15px;
+    }
+    h3 {
+        margin: 10 0;
+
+    }
+    
+    .local{
+        padding:0;
+        width:30%;
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+
+
+    }
+    .mapa{
+        width:400px; 
+        height: 400px;
+       
+    }
+    .mapa iframe{
+        width: 300px;
+        height: 300px;}
+    
+    
+    .endereço{
+        width:400px;
+        height:300px;
+        
+    }
+}
+ 
+
+
+    
+
+
+    

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    
+    <title>walace-barbearia</title>
+</head>
+
+<body>
+    <div class="mascara"></div>
+    <div onclick="cliqueinatela()" class="mascara-formulario"></div>
+    <header>
+        <div class="menu">
+            <a onclick="cliqueiNobotao()">agendamento</a>
+            <a href="#serviços">nossos serviços</a>
+            <a href="#localizacao">localização</a>
+        </div>
+    </header>
+
+    <div class="conteiner-principal">
+        <div class="conteiner-filho">
+        <img class="logo" src="./img/Imagem_do_WhatsApp_de_2024-09-26_à_s__11.52.27_73843437-removebg.png">
+        <div class="caixa-texto">
+            <h1>o melhor lugar para se estar é entre amigos!</h1>
+
+            <button onclick="cliqueiNobotao()">agendamento</button>
+        </div>
+    </div>
+
+    </div>
+    <div class="formulario">
+
+        <form id="agendamentoForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+    
+            <label for="opcoes">serviços</label>
+            <select id="opcoes" name="opcoes" multiple size="2" required>
+                <option value="opcao1">corte máquina R$ 15,00</option>
+                <option value="opcao2">social R$ 20,00</option>
+                <option value="opcao3">Degradê R$ 20,00</option>
+                <option value="opcao4">Navalhado R$ 25,00</option>
+                <option value="opcao5">Tesoura R$ 25,00</option>
+                <option value="opcao6">Infantil tradicional R$ 20,00</option>
+                <option value="opcao7">Infantil tesoura/degradê R$ 25,00</option>
+                <option value="opcao8">Pezinho R$ 5,00</option>
+                <option value="opcao9">Barba R$ 15,00</option>
+                <option value="opcao10">Sobrancelha R$ 5,00</option>
+            </select>
+        
+    
+            <label for="funcionario">profissionais:</label>
+            <select id="funcionario" name="funcionario" required>
+                <option value="Walace">WALACE</option>
+                <option value="Henrique">HENRIQUE</option>
+                <option value="Danilo">DANILO</option>
+            </select>
+    
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+    
+            <label for="horario">Horário:</label>
+            <select id="horario" name="horario" required>
+                <!-- Horários das 08:00 às 18:00 com intervalos de 30 minutos -->
+                <option value="08:00">08:00</option>
+                <option value="08:30">08:30</option>
+                <option value="09:00">09:00</option>
+                <option value="09:30">09:30</option>
+                <option value="10:00">10:00</option>
+                <option value="10:30">10:30</option>
+                <option value="11:00">11:00</option>
+                <option value="11:30">11:30</option>
+                <option value="12:00">12:00</option>
+                <option value="12:30">12:30</option>
+                <option value="13:00">13:00</option>
+                <option value="13:30">13:30</option>
+                <option value="14:00">14:00</option>
+                <option value="14:30">14:30</option>
+                <option value="15:00">15:00</option>
+                <option value="15:30">15:30</option>
+                <option value="16:00">16:00</option>
+                <option value="16:30">16:30</option>
+                <option value="17:00">17:00</option>
+                <option value="17:30">17:30</option>
+            </select>
+    
+            <button type="submit">Agendar</button>
+        </form>
+
+
+    </div>
+    <div class="fundo">
+        <img src="img/barbeiro.jpg">
+    </div>
+
+    <section id="serviços">
+        <h3>nossos serviços</h3>
+        <div class="tabela-de-preço">
+            <div class="itens">
+                <ul>
+                    <li>corte máquina(1 pente)</li>
+                    <li>social</li>
+                    <li>degradê</li>
+                    <li>navalhado</li>
+                    <li>tesoura</li>
+                    <li>infantil tradicional</li>
+                    <li>infantil tesoura/degradê</li>
+                    <li>pezinho</li>
+                    <li>barba</li>
+                    <li>sobrancelha</li>
+                </ul>
+            </div>
+
+            <div class="precos">
+                <ul>
+                    <li>R$ 15,00</li>
+                    <li>R$ 20,00 </li>
+                    <li>R$ 20,00</li>
+                    <li>R$ 25,00</li>
+                    <li>R$ 25,00</li>
+                    <li>R$ 20,00</li>
+                    <li>R$ 25,00</li>
+                    <li>R$ 5,00</li>
+                    <li>R$ 15,00</li>
+                    <li>R$ 5,00</li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        </div>
+
+    </section>
+    <section id="localizacao">
+        <h3>minha localização</h3>
+        <div class="local">
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15792.981400171193!2d-35.9759509!3d-8.2783622!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a98b7c53b8fc61%3A0x5d5ef1b18bef796b!2sWALLACE%20BARBEARIA%20-%20Barbearia%2C%20Corte%20Masculino%20em%20Caruaru!5e0!3m2!1spt-BR!2sbr!4v1727546809666!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="endereço">
+                <img width="84" height="84"
+                    src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/FFFFFF/external-map-city-element-flatart-icons-outline-flatarticons.png"
+                    alt="external-map-city-element-flatart-icons-outline-flatarticons" />
+                <p>R. Antônio Menino, 20 <br>Divinópolis, Caruaru - PE,<br> 55010-210</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="contatos">
+            
+        <a href="https://www.instagram.com/walace_barbearia.entre.amigos/" target="_blank">
+            <img width="30" height="30" src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1"/>
+        </a>
+            
+        <a href="https://api.whatsapp.com/send?phone=5581994944344&text=ol%C3%A1.%20como%20posso%20ajudar%3F" target="_blank">
+            <img width="30" height="30" src="https://img.icons8.com/ios/50/whatsapp--v1.png" alt="whatsapp--v1"/>
+        
+    </div>
+           
+
+    </footer>
+</body>
+<script src="./script.js"></script>
+
+</html>
